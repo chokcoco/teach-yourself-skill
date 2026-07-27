@@ -2,6 +2,8 @@
 
 用于把课程当作可验证、可迭代的教学产品：先定义任务与来源，再规划、生成、质检并发布 Markdown/HTML 课程。它提供六类正文写法、课程评价量规与无外部依赖的确定性检查器。
 
+> 基于当前 Skill 生成的单个完整课程参考：[如何实现高质量的 AI Code Review](https://chokcoco.github.io/courses/high-quality-ai-code-review/index.html)
+
 ## 内容
 
 ```text
