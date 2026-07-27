@@ -16,7 +16,19 @@ teach-yourself-skill/
 
 ## 使用
 
-将本目录安装到 Codex 的 skills 根目录，或在任务中显式引用其 `SKILL.md`。课程生成、改写、审阅和发布时使用 `$teach-yourself-skill`。
+可通过 [skills](https://github.com/vercel-labs/skills) CLI 直接从 GitHub 安装：
+
+```bash
+npx skills@latest add chokcoco/teach-yourself-skill
+```
+
+面向 Codex 的全局安装可显式指定目标：
+
+```bash
+npx skills@latest add chokcoco/teach-yourself-skill --agent codex --global --yes
+```
+
+安装后，在课程生成、改写、审阅和发布任务中使用 `$teach-yourself-skill`。也可以将本目录放入 Codex 的 skills 根目录，或在任务中显式引用其 `SKILL.md`。
 
 第一阶段检查不需要安装依赖：
 
@@ -45,7 +57,7 @@ node --test scripts/validate-course.test.mjs
 │   ├── COURSE-GENERATION-SPEC.md  # 章节规格、字符限制、交付格式
 │   ├── COURSE-BLUEPRINT.md     # 逐章蓝图（模块、学习成果、代码证据）
 │   ├── NOTES.md                # 设计笔记与确认记录
-│   └── RESOURCES.md     # 公共文档、语言规范、框架官方来源
+│   └── learning-records/        # 生成批次、审核意见和关键决策记录
 ├── lessons/                    # 逐章 Markdown + HTML
 ├── reference/                  # 术语表、速查页等参考材料
 ├── quality/                    # 质检报告
