@@ -1,0 +1,4 @@
+interface:
+  display_name: "Teach Yourself Skill"
+  short_description: "规划、生成、质检并迭代可验证课程"
+  default_prompt: "使用 $teach-yourself-skill 规划并生成一门可验证的课程。"
