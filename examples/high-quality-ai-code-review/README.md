@@ -1,17 +1,30 @@
 # 案例：高质量 AI Code Review
 
-这是 `teach-yourself-skill` 的完整课程案例。它用于展示课程 workspace、学生可见 Markdown/HTML、参考资料和分阶段质量报告之间的关系。
+`teach-yourself-skill` 的完整课程案例，展示一门 9 章静态课程的最终交付形态。
+
+## 内容
+
+```text
+examples/high-quality-ai-code-review/
+├── index.html               # 课程首页（目录、进度、导航）
+├── course.json              # 课程元数据
+├── lessons/                 # 逐章 Markdown + HTML
+├── reference/               # 术语表等参考资料
+└── assets/                  # CSS、JS、主题
+```
+
+## 阅读方式
+
+在浏览器中打开 `index.html` 即可阅读全部 9 章内容。
 
 ## 验证
 
-从本仓库根目录运行：
+从仓库根目录运行：
 
 ```bash
 node scripts/validate-course.mjs examples/high-quality-ai-code-review
 ```
 
-课程已包含生成后的静态页面；在浏览器中打开 `index.html` 即可阅读。
-
 ## 发布边界
 
-案例含有基于工程实践的教学表述。公开发布前，维护者必须确认其不披露非公开架构、真实客户信息、未授权指标或受限制资料；不能确认时，应先替换为合成案例。
+案例基于工程实践写作。公开发布前，维护者需确认课程正文不包含非公开信息或受限资料。
